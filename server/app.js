@@ -21,24 +21,25 @@ axios.get(url + req.url + apiKey)
 
 });
 
-app.get('/', (req, res) => {
-    console.log(req.query);
+// app.get('/', (req, res) => {
+//     console.log(req.query);
 
-axios.get(url + "?t=baby+driver&" + apiKey)
-    .then(response => {
+// axios.get(url + "?t=baby+driver&" + apiKey)
+//     .then(response => {
         
-        res.send(response.data);
-    })
-    .catch(error => {
-        console.error('Error fetching data from OMDb API:', error);
-    });
+//         res.send(response.data);
+//     })
+//     .catch(error => {
+//         console.error('Error fetching data from OMDb API:', error);
+//     });
 
-});
+// });
 
 // When making calls to the OMDB API make sure to append the '&apikey=8730e0e' parameter
 
 
 module.exports = app;
+
 
 
 //
